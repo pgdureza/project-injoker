@@ -1,0 +1,254 @@
+[gd_scene load_steps=49 format=3 uid="uid://cs1h4d68dm2ld"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_sriwu"]
+[ext_resource type="Texture2D" uid="uid://dtneawb08q8ft" path="res://assets/mage/Idle/Idle1.png" id="2_fhofp"]
+[ext_resource type="Texture2D" uid="uid://cg4o7e5ri75rb" path="res://assets/mage/Attack/StaffWood/AttackWood1.png" id="2_p51o2"]
+[ext_resource type="Texture2D" uid="uid://dhur676qm0vta" path="res://assets/mage/Idle/Idle2.png" id="3_d1kwq"]
+[ext_resource type="Texture2D" uid="uid://cx7lgc70dgxih" path="res://assets/mage/Attack/StaffWood/AttackWood2.png" id="3_fr5v4"]
+[ext_resource type="Texture2D" uid="uid://bxbrn6x8ak6q4" path="res://assets/mage/Attack/StaffWood/AttackWood3.png" id="4_kie22"]
+[ext_resource type="Texture2D" uid="uid://djp5avfpuy1qa" path="res://assets/mage/Idle/Idle3.png" id="4_mevsv"]
+[ext_resource type="Texture2D" uid="uid://t100ha054enh" path="res://assets/mage/Attack/StaffWood/AttackWood4.png" id="5_30qgo"]
+[ext_resource type="Texture2D" uid="uid://bnml01vctwr4k" path="res://assets/mage/Idle/Idle4.png" id="5_xyo7v"]
+[ext_resource type="Texture2D" uid="uid://cnhlmx73wgos6" path="res://assets/mage/Attack/StaffWood/AttackWood5.png" id="6_dcehe"]
+[ext_resource type="Texture2D" uid="uid://dqf24o6u7eka" path="res://assets/mage/Idle/Idle5.png" id="6_gl41k"]
+[ext_resource type="Texture2D" uid="uid://twlevvogkcrk" path="res://assets/mage/Attack/StaffWood/AttackWood6.png" id="7_6jvyy"]
+[ext_resource type="Texture2D" uid="uid://bitt5otg6voy" path="res://assets/mage/Idle/Idle6.png" id="7_236p2"]
+[ext_resource type="Texture2D" uid="uid://dmdy7y0xjvjea" path="res://assets/mage/Rising - Jumping/Rising1.png" id="8_7smow"]
+[ext_resource type="Texture2D" uid="uid://cqjbjk1pwufkf" path="res://assets/mage/Rising - Jumping/Rising2.png" id="9_v7oo0"]
+[ext_resource type="Texture2D" uid="uid://1eg3x1lefdku" path="res://assets/mage/Rising - Jumping/Rising3.png" id="10_bfhif"]
+[ext_resource type="Texture2D" uid="uid://bwdlddp5emutt" path="res://assets/mage/Rising - Jumping/Rising4.png" id="11_xjmj3"]
+[ext_resource type="Texture2D" uid="uid://b3vkhsigj5qt5" path="res://assets/mage/Rising - Jumping/Rising5.png" id="12_6rvtb"]
+[ext_resource type="Texture2D" uid="uid://b0cbp3eroty3a" path="res://assets/mage/Rising - Jumping/Rising6.png" id="13_ulxc7"]
+[ext_resource type="Texture2D" uid="uid://p4exi6u267xj" path="res://assets/mage/Falling/Falling1.png" id="14_gac50"]
+[ext_resource type="Texture2D" uid="uid://emtirw64x7x6" path="res://assets/mage/Falling/Falling2.png" id="15_c8cpm"]
+[ext_resource type="Texture2D" uid="uid://bjsu5fheisk2a" path="res://assets/mage/Falling/Falling3.png" id="16_58lod"]
+[ext_resource type="Texture2D" uid="uid://braflaqjc8ptt" path="res://assets/mage/Falling/Falling4.png" id="17_4f500"]
+[ext_resource type="Texture2D" uid="uid://bqwdgdf5fekrd" path="res://assets/mage/Falling/Falling5.png" id="18_akr4k"]
+[ext_resource type="Texture2D" uid="uid://cl46xvxmsmiko" path="res://assets/mage/Falling/Falling6.png" id="19_0iuor"]
+[ext_resource type="Texture2D" uid="uid://ctn267x1uda0v" path="res://assets/mage/Run/Run1.png" id="20_qod8o"]
+[ext_resource type="Texture2D" uid="uid://revvn1avxqi6" path="res://assets/mage/Run/Run2.png" id="21_qy2c5"]
+[ext_resource type="Texture2D" uid="uid://c31j21dk8pxca" path="res://assets/mage/Run/Run3.png" id="22_onu1d"]
+[ext_resource type="Texture2D" uid="uid://bm2renxtnqqnu" path="res://assets/mage/Run/Run4.png" id="23_b6pwh"]
+[ext_resource type="Texture2D" uid="uid://67rrwlo4mhxh" path="res://assets/mage/Run/Run5.png" id="24_n8b34"]
+[ext_resource type="Texture2D" uid="uid://trcl6f0dqaoe" path="res://assets/mage/Run/Run6.png" id="25_3kuyg"]
+[ext_resource type="PackedScene" uid="uid://espwul6n5sr4" path="res://scenes/spell_component.tscn" id="26_0vii1"]
+[ext_resource type="Texture2D" uid="uid://4utnjtm725x8" path="res://assets/mage/AttackCharge/StaffWood/ChargeWood1.png" id="26_vboc3"]
+[ext_resource type="Texture2D" uid="uid://dr8shylxwfis3" path="res://assets/mage/AttackCharge/StaffWood/ChargeWood2.png" id="27_b5poe"]
+[ext_resource type="Texture2D" uid="uid://bfjq4d6e4josu" path="res://assets/mage/AttackCharge/StaffWood/ChargeWood3.png" id="28_3ayq2"]
+[ext_resource type="Texture2D" uid="uid://bjonsd8cribwa" path="res://assets/mage/AttackCharge/StaffWood/ChargeWood4.png" id="29_hvg8q"]
+[ext_resource type="Texture2D" uid="uid://dlr5db6rjjtl2" path="res://assets/mage/AttackCharge/StaffWood/ChargeWood5.png" id="30_7sfrh"]
+[ext_resource type="Texture2D" uid="uid://dn5ck55mv30tb" path="res://assets/mage/AttackCharge/StaffWood/ChargeWood6.png" id="31_do7eo"]
+[ext_resource type="Texture2D" uid="uid://cj2t80mtl8ncq" path="res://assets/mage/Role/Role1.png" id="32_8lcsj"]
+[ext_resource type="Texture2D" uid="uid://dc1viqgiig3ad" path="res://assets/mage/Role/Role4.png" id="32_ndk5y"]
+[ext_resource type="Texture2D" uid="uid://he3i78yjsueg" path="res://assets/mage/Role/Role2.png" id="33_aua6h"]
+[ext_resource type="Texture2D" uid="uid://r4wwpdedrfum" path="res://assets/mage/Role/Role3.png" id="34_ete8a"]
+[ext_resource type="Texture2D" uid="uid://bfn8jc15yvtbm" path="res://assets/mage/Role/Role5.png" id="36_fxdkm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsg43"]
+atlas = ExtResource("2_fhofp")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_botbh"]
+atlas = ExtResource("3_d1kwq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnbh1"]
+atlas = ExtResource("32_ndk5y")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eqhcr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p51o2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fr5v4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kie22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_30qgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dcehe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6jvyy")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_vboc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_b5poe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_3ayq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hvg8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_7sfrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_do7eo")
+}],
+"loop": true,
+"name": &"casting",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_gac50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_c8cpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_58lod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4f500")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_akr4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0iuor")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsg43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_botbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mevsv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xyo7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gl41k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_236p2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_7smow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_v7oo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bfhif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xjmj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6rvtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ulxc7")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_8lcsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_aua6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ete8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ndk5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_fxdkm")
+}],
+"loop": false,
+"name": &"roll",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_qod8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qy2c5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_onu1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_b6pwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_n8b34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3kuyg")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnbh1")
+}],
+"loop": true,
+"name": &"switch",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5botp"]
+size = Vector2(10, 14)
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 1
+collision_layer = 2
+script = ExtResource("1_sriwu")
+
+[node name="Mage" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_eqhcr")
+animation = &"run"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5botp")
+
+[node name="SpellComponent3" parent="." instance=ExtResource("26_0vii1")]
+position = Vector2(16, -8)
+
+[node name="SpellComponent2" parent="." instance=ExtResource("26_0vii1")]
+position = Vector2(0, -16)
+frame_progress = 0.992671
+
+[node name="SpellComponent1" parent="." instance=ExtResource("26_0vii1")]
+position = Vector2(-16, -8)
+rotation = -0.000684887
+frame_progress = 0.0
